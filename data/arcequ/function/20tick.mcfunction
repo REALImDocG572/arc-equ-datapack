@@ -8,5 +8,5 @@ execute as @e[type=villager,tag=!given_tome_trades,predicate=arcequ:misc/detect_
 tag @e[type=villager,tag=given_tome_trades,predicate=!arcequ:misc/detect_librarian_profession] remove given_tome_trades
 
 
-# Restart
+# Reschedule
 schedule function arcequ:20tick 20t replace
