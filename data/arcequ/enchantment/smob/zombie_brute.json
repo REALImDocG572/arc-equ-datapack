@@ -1,0 +1,85 @@
+{
+    "description": "smob.zombie_brute",
+    "supported_items": "#minecraft:swords",
+    "primary_items": "#minecraft:swords",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "any"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "arcequ:smob/zombie_brute/cooldown"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "smobCD1"
+                    },
+                    "range": {
+                        "min": 1,
+                        "max": 9999999
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "arcequ:smob/zombie_brute/test_dash"
+                },
+                "requirements": [
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": "this",
+                            "score": "smobCD1"
+                        },
+                        "range": 0
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": "this",
+                            "score": "smobAD1"
+                            },
+                        "range": -1
+                    }
+                ]
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "arcequ:smob/ability/dash/warmup"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "smobAD1"
+                    },
+                    "range": {
+                        "min": 1,
+                        "max": 9999999
+                    }
+                }
+            }
+        ]
+    }
+}

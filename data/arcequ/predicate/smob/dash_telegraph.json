@@ -1,0 +1,46 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:score",
+                "target": "this",
+                "score": "smobCD1"
+            },
+            "range": 0
+        },
+        {
+            "condition": "minecraft:any_of",
+            "terms": [
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "smobAD1"
+                    },
+                    "range": 600
+                },
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "smobAD1"
+                    },
+                    "range": 400
+                },
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "smobAD1"
+                    },
+                    "range": 200
+                }
+            ]
+        }
+    ]
+}

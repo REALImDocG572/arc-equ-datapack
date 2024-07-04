@@ -1,2 +1,1 @@
-# uh hi
-say hi the enchantment wokrs
+say hi
