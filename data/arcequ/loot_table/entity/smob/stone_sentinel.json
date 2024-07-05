@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gunpowder",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "{\"translate\":\"item.arcequ.animation_agent\"}",
+                                "minecraft:custom_data": {"AEItemID":3}
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "description": "smob.zombie_brute",
-    "supported_items": "#minecraft:swords",
-    "primary_items": "#minecraft:swords",
+    "supported_items": "#minecraft:head_armor",
+    "primary_items": "#minecraft:head_armor",
     "weight": 1,
     "max_level": 1,
     "min_cost": {
