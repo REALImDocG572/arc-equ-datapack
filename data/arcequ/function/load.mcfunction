@@ -10,6 +10,11 @@ team add Hostiles
 
 ### Scoreboards n stuff
 
+# Maths
+scoreboard objectives add constant dummy
+scoreboard players set 45 constant 45
+scoreboard players set 135 constant 135
+
 # Coordinates
 scoreboard objectives add x1 dummy
 scoreboard objectives add y1 dummy
@@ -28,5 +33,13 @@ scoreboard objectives add smobCD3 dummy
 
 # Smob ability dummies
 scoreboard objectives add smobAD1 dummy
+
+# RIFT
+scoreboard objectives add RIFTcontrols dummy
+scoreboard objectives add RIFTetpCD dummy
+
+# Misc tests
+scoreboard objectives add miscTests dummy
+scoreboard objectives add miscTests2 dummy
 
 tellraw @a [{"text":"Arcanic Equilibrium has successfully loaded (arcequ:load)"}]

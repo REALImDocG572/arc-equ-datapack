@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "arcequ:tome/anti-lectern/player_put_tome_on_lectern"
+        "function": "arcequ:tome/anti-lectern/player_put_book_on_lectern"
     }
 }

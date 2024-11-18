@@ -1,0 +1,2 @@
+$execute store result score @s miscTests run fill ~-6 $(y1) ~-6 ~6 $(y2) ~6 lectern[facing=$(facing)] replace lectern[facing=$(facing)]{Book:{components:{"minecraft:custom_data":{AEItemID:7b}}}}
+execute if score @s miscTests matches 1.. run scoreboard players add @s miscTests2 1

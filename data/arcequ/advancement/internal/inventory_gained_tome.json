@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:written_book",
+            "predicates": {
+              "minecraft:custom_data": {
+              	"AEItemID": 7
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "arcequ:tome/refresh_tome"
+  }
+}
