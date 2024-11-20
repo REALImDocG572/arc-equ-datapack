@@ -37,6 +37,7 @@ scoreboard objectives add smobAD1 dummy
 # RIFT
 scoreboard objectives add RIFTcontrols dummy
 scoreboard objectives add RIFTetpCD dummy
+scoreboard objectives add RIFTPMSlots dummy
 
 # Misc tests
 scoreboard objectives add miscTests dummy
